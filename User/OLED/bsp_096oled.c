@@ -151,9 +151,6 @@ void OLED_Put_Char(uint8_t x, uint8_t y, uint8_t *Character)
         OLED_Send_Data(Character[i]);
     }
 
-
-
-
 }
 
 
