@@ -31,6 +31,11 @@ extern "C" {
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include "bsp_usart1.h"
+#include "retarget.h"
+#include "delay.h"
+#include "bsp_dht11.h"
+#include "bsp_096oled.h"
 
 /* USER CODE END Includes */
 
@@ -57,6 +62,12 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define DHT11_DATA_Pin GPIO_PIN_2
+#define DHT11_DATA_GPIO_Port GPIOB
+#define OLED_RES_Pin GPIO_PIN_8
+#define OLED_RES_GPIO_Port GPIOA
+#define OLED_DC_Pin GPIO_PIN_12
+#define OLED_DC_GPIO_Port GPIOA
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */

@@ -3,13 +3,13 @@
 
 
 #include "spi.h"
-#include "stm32f4xx_hal.h"	//链接HAL库
+#include "stm32f1xx_hal.h"	//链接HAL库
 #include "delay.h"
 #include "oled_font.h"
 
 
 
-#define OLED_SPI    hspi1
+#define OLED_SPI    hspi2
 #define OLED_WIDTH  128
 #define OLED_HIGHT  64
 
